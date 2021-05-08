@@ -1,0 +1,1 @@
+create login VTYSuser with password = '123', default_database = VTYS

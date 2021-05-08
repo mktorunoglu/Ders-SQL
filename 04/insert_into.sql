@@ -1,0 +1,28 @@
+﻿INSERT INTO birimler(birim_id, birim_ad) VALUES(1, 'Yazılım')
+INSERT INTO birimler(birim_id, birim_ad) VALUES(2, 'Donanım')
+INSERT INTO birimler(birim_id, birim_ad) VALUES(3, 'Güvenlik')
+
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(1, 'İsmail', 'İşeri', 100000, '02.20.2016', 1)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(2, 'Hami', 'Satılmış', 80000, '06.11.2016', 1)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(3, 'Durmuş', 'Şahin', 300000, '02.20.2016', 2)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(4, 'Kağan', 'Yazar', 500000, '02.20.2016', 3)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(5, 'Meryem', 'Soysaldı', 500000, '06.11.2016', 3)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(6, 'Duygu', 'Akşehir', 200000, '06.11.2016', 2)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(7, 'Kübra', 'Seyhan', 75000, '02.20.2016', 1)
+INSERT INTO calisanlar(calisan_id, ad, soyad, maas, katılmaTarihi, calisan_birim_id) VALUES(8, 'Gülcan', 'Yıldız', 90000, '06.11.2016', 3)
+
+INSERT INTO ikramiye(ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES(1, 5000, '02.20.2016')
+INSERT INTO ikramiye(ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES(2, 3000, '06.11.2016')
+INSERT INTO ikramiye(ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES(3, 4000, '02.20.2016')
+INSERT INTO ikramiye(ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES(1, 4500, '02.20.2016')
+INSERT INTO ikramiye(ikramiye_calisan_id, ikramiye_ucret, ikramiye_tarih) VALUES(2, 3500, '06.11.2016')
+
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(1, 'Yönetici','02.20.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(2, 'Personel','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(8, 'Personel','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(5, 'Müdür','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(4, 'Yönetici Yardımcısı','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(7, 'Personel','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(6, 'Takım Lideri','06.11.2016')
+INSERT INTO unvan(unvan_calisan_id, unvan_calisan, unvan_tarih) VALUES(3, 'Takım Lideri','06.11.2016')
+
