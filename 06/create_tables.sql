@@ -1,0 +1,39 @@
+CREATE TABLE Fakulteler
+(
+	fakulteID INT PRIMARY KEY NOT NULL,
+	fakulteAd VARCHAR(100)
+)
+
+CREATE TABLE Bolumler
+(
+	bolumID INT PRIMARY KEY NOT NULL,
+	bolumAd VARCHAR(100),
+	fakulteID INT FOREIGN KEY REFERENCES Fakulteler(fakulteID)
+)
+
+CREATE TABLE Dersler
+(
+	dersID INT PRIMARY KEY NOT NULL,
+	dersAd VARCHAR(100),
+	bolumID INT FOREIGN KEY REFERENCES Bolumler(bolumID)
+)
+
+CREATE TABLE Ogrenciler
+(
+	ogrenciID INT PRIMARY KEY NOT NULL,
+	ad VARCHAR(25),
+	soyad VARCHAR(25),
+	bolumID INT FOREIGN KEY REFERENCES Bolumler(bolumID)
+)
+
+CREATE TABLE Notlar
+(
+	notID INT PRIMARY KEY NOT NULL,
+	ogrenciID INT FOREIGN KEY REFERENCES Ogrenciler(ogrenciID),
+	dersID INT FOREIGN KEY REFERENCES Dersler(dersID),
+	yil VARCHAR(9),
+	yariyil VARCHAR(5),
+	vize INT,
+	final INT
+)
+
